@@ -1,0 +1,48 @@
+/* RESET GENERAL */
+p {
+  margin: 0px;
+}
+
+/* couleurs */
+/*
+.violet{
+    color: #9356DC;
+}
+*/
+/* fonctionnement > 3 boutons */
+.rond_choix {
+  border: 1px solid #9356DC;
+  background-color: #9356DC;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+}
+.rond_choix p {
+  color: white;
+  padding-left: 6px;
+  padding-top: 1px;
+}
+
+.fonctionnement_boutons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#choix_1, #choix_2, #choix_3 {
+  display: flex;
+  align-items: center;
+}
+#choix_1 .btn_choix, #choix_2 .btn_choix, #choix_3 .btn_choix {
+  border-radius: 20px;
+  min-width: 250px;
+  min-height: 60px;
+  background-color: white;
+  border-color: white;
+  box-shadow: 0px 0px 5px #F2F2F2;
+}
+#choix_1 :focus, #choix_2 :focus, #choix_3 :focus {
+  background-color: #9256dc25;
+}
+
+/*# sourceMappingURL=index_style.css.map */
