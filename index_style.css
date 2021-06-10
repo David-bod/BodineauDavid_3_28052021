@@ -1,5 +1,14 @@
+/* RALEWAY */
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway/Raleway-VariableFont_wght.ttf"), url("Raleway-Italic-VariableFont_wght.ttf");
+}
 /* RESET GENERAL */
 p {
+  margin: 0px;
+}
+
+figure {
   margin: 0px;
 }
 
@@ -9,6 +18,55 @@ p {
     color: #9356DC;
 }
 */
+.white {
+  color: white;
+}
+
+/* CSS GENERAL */
+body {
+  font-family: Raleway;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h1, h2 {
+  font-weight: bolder;
+}
+
+h3 {
+  margin: 0px;
+}
+
+/* Logo */
+#figure_ohmyfood {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.logo_ohmyfood {
+  width: 20%;
+  min-width: 150px;
+}
+
+/* Header ville */
+#selection_ville {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
+}
+#selection_ville a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 1%;
+}
+
 /* fonctionnement > 3 boutons */
 .rond_choix {
   border: 1px solid #9356DC;
@@ -39,10 +97,51 @@ p {
   min-height: 60px;
   background-color: white;
   border-color: white;
-  box-shadow: 0px 0px 5px #F2F2F2;
+  box-shadow: 0px 0px 2px #F2F2F2;
 }
 #choix_1 :focus, #choix_2 :focus, #choix_3 :focus {
   background-color: #9256dc25;
+}
+
+/* Section restaurants */
+#section_restaurants {
+  border: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+/* figure dans > Section restaurants */
+.restaurants_photo {
+  box-shadow: 0px 0px 4px #C2C2C2;
+  border-radius: 20px;
+  width: 90%;
+  min-width: 150px;
+  min-height: 200px;
+  margin-top: 10%;
+}
+.restaurants_photo img {
+  width: 100%;
+  max-width: 850px;
+  max-height: 600px;
+  min-width: 150px;
+  min-height: 100px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  object-fit: cover;
+}
+
+/* footer */
+footer {
+  border: 1px solid #3d3d3d;
+  background-color: #3d3d3d;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=index_style.css.map */
