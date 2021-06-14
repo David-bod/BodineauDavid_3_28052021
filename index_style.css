@@ -48,6 +48,7 @@ h3 {
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
+  margin-top: 20px;
 }
 
 .logo_ohmyfood {
@@ -60,15 +61,43 @@ h3 {
   display: flex;
   justify-content: center;
   padding: 20px 0px 20px 0px;
-  border-top: 1px solid #F2F2F2;
-  border-bottom: 1px solid #F2F2F2;
-  background-color: #F2F2F2;
+  background-color: #e7e7e7f1;
 }
 #selection_ville a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  margin-left: 1%;
+  margin-left: 20px;
+}
+
+/* header general */
+header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.background_header {
+  background-color: #F2F2F2;
+  padding-bottom: 50px;
+}
+
+/* main */
+main h2 {
+  margin-left: 50px;
+}
+
+/* Bouton restaurants */
+#selection_restaurant {
+  margin-top: 30px;
+}
+
+.btn_restaurant {
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px;
+  font-weight: bolder;
+  color: white;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
 }
 
 /* fonctionnement > 3 boutons */
@@ -107,6 +136,19 @@ h3 {
   color: black;
   font-weight: bolder;
 }
+#choix_1 i, #choix_2 i, #choix_3 i {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#choix_1:hover, #choix_2:hover, #choix_3:hover {
+  background-color: #dbbeff86;
+  transition: 0.5s;
+  font-size: 1.1em;
+}
+#choix_1:hover i, #choix_2:hover i, #choix_3:hover i {
+  color: #9356DC;
+  transition: 0.5s;
+}
 
 /* Section restaurants */
 #section_restaurants {
@@ -137,16 +179,37 @@ h3 {
   object-fit: cover;
 }
 
-/* footer */
+/* FOOTER */
+/* LOGO */
+.logo_ohmyfood_footer {
+  width: 30%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 footer {
   border: 1px solid #3d3d3d;
   background-color: #3d3d3d;
   padding-top: 2%;
-  padding-left: 2%;
+  padding-left: 25px;
+  text-align: left;
 }
 footer a {
   text-decoration: none;
   color: white;
+}
+
+.footer_texte {
+  margin-bottom: 10px;
+}
+
+.footer_texte_a {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.footer_texte_a a {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=index_style.css.map */
