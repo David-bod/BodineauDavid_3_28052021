@@ -4,6 +4,10 @@
   src: url("Raleway/Raleway-VariableFont_wght.ttf"), url("Raleway-Italic-VariableFont_wght.ttf");
 }
 /* RESET GENERAL */
+body {
+  margin: 0px;
+}
+
 p {
   margin: 0px;
 }

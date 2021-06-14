@@ -5,6 +5,10 @@
 		 url("Raleway-Italic-VariableFont_wght.ttf");
 }
 /* RESET GENERAL */
+body{
+    margin: 0px;
+}
+
 p {
   margin: 0px;
 }
@@ -44,6 +48,7 @@ h3{
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
+    
   }
   .logo_ohmyfood{
     width: 20%;
@@ -110,6 +115,7 @@ h3{
     display: flex;
     justify-content: center;
     padding-bottom: 5%;
+
     article{
 
     }

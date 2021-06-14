@@ -2,31 +2,137 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/9b758e3bf3.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="alafrancaise_style.css">
 	<title>A la francaise</title>
 </head>
 <body>
 	<header>
-		<div>
-			<i class="fas fa-arrow-left"></i>
+		<div class="header_top">
+			<div class="back_arrow">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+			<figure>
+				<img src="../images/logo/ohmyfood.png" alt="Logo Ohmyfood" class="logo_ohmyfood">
+			</figure>
 		</div>
-		<figure>
-			<img src="../images/logo/ohmyfood.png" alt="Logo Ohmyfood">
-		</figure>
+		<img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo : présentation plat à la française" id="header_plat_image">
+		<div class="header_titre">
+			<div>
+				<h1>A la française</h1>
+			</div>
+			<div>
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
 	</header>
 	<main>
-		<section>
-			<h1>A la française</h1>
-			<i class="far fa-heart"></i>
-			<div class="entrees">
-				
+		<section> <!-- section comporant entrees, plats et desserts -->
+			<div class="entrees"> <!-- div comporant tout le bloc entrees -->
+				<h2>ENTREES</h2>
+				<div class="barre_verte"> <!-- div comportant la barre verte -->
+
+				</div>
+				<div class="entrees_bloc">  <!-- div comportant les 3 cartouches -->
+					<div class="entrees_cartouche"> <!-- div comportant 1 cartouche -->
+							<div class="cartouche_texte"> <!-- div comporant le texte h3 + p -->
+								<h3>Tartare de poulpe acidulé</h3>
+								<p>Aux zestes d'orange</p>
+							</div>
+							<div class="cartouche_prix"> <!-- div comporant le prix -->
+								25€
+							</div>
+					</div>
+					<div class="entrees_cartouche">
+						<div class="cartouche_texte">
+							<h3>Velouté de légumes d'antan</h3>
+							<p>Carotte, panais, topinambour</p>
+						</div>
+						<div class="cartouche_prix">
+							35€
+						</div>
+					</div>
+					<div class="entrees_cartouche">
+						<div class="cartouche_texte">
+							<h3>Soupe à l'oignon</h3>
+							<p>Revisitée</p>
+						</div>
+						<div class="cartouche_prix">
+							20€
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="plats">
-				
+				<h2>PLATS</h2>
+				<div class="barre_verte">
+
+				</div>
+				<div class="plats_bloc">
+					<div class="plats_cartouche">
+						<div class="cartouche_texte">
+							<h3>Coquilles Saint-Jacques</h3>
+							<p>Accompagnées d'une purée de panais</p>
+						</div>
+						<div class="cartouche_prix">
+							40€
+						</div>
+					</div>
+					<div class="plats_cartouche">
+						<div class="cartouche_texte">
+							<h3>Magret de canard</h3>
+							<p>Et parmentier de pommes de terre</p>
+						</div>
+						<div class="cartouche_prix">
+							35€
+						</div>
+					</div>
+					<div class="plats_cartouche">
+						<div class="cartouche_texte">
+							<h3>Pigeonneau d’Ille-et-Vilaine</h3>
+							<p>Sur son lit de gnocchis aux légumes</p>
+						</div>
+						<div class="cartouche_prix">
+							44€
+						</div>
+					</div>
+				</div>		
 			</div>
 			<div class="desserts">
-				
+				<h2>DESSERTS</h2>
+				<div class="barre_verte">
+
+				</div>
+				<div class="desserts_bloc">
+					<div class="desserts_cartouche">
+						<div class="cartouche_texte">
+							<h3>Pétales de violettes glacés</h3>
+							<p>Et purée de noisettes</p>
+						</div>
+						<div class="cartouche_prix">
+							18€
+						</div>
+					</div>
+					<div class="desserts_cartouche">
+						<div class="cartouche_texte">
+							<h3>Fondant au chocolat</h3>
+							<p>Revisité</p>
+						</div>
+						<div class="cartouche_prix">
+							22€
+						</div>
+					</div>
+					<div class="desserts_cartouche">
+						<div class="cartouche_texte">
+							<h3>Millefeuille croustillant</h3>
+							<p>Myrtilles et pâte d’amande</p>
+						</div>
+						<div class="cartouche_prix">
+							23€
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="commander">
 				<input type="submit" name="commander_menu" value="Commander">
@@ -35,14 +141,14 @@
 	</main>
 	<footer>
 		<figure>
-			<img src="../images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+			<img src="../images/logo/ohmyfood.png" alt="Logo Ohmyfood" class="logo_ohmyfood_footer">
 		</figure>
-		<div>
-			<i class="fas fa-utensils"></i>
+		<div class="footer_texte">
+			<i class="fas fa-utensils white"></i>
 			<a href="#">Proposer un restaurant</a>
 		</div>
-		<div>
-			<i class="fas fa-handshake"></i>
+		<div class="footer_texte">
+			<i class="fas fa-handshake white"></i>
 			<a href="#">Devenir partenaire</a>
 		</div>
 			<a href="#">Mentions légales</a><br>

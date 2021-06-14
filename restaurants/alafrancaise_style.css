@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../Raleway/Raleway-VariableFont_wght.ttf"), url("../Raleway-Italic-VariableFont_wght.ttf");
+}
+/* RESET GENERAL PAGES RESTAURANTS */
+h2, h3, p {
+  margin: 0px;
+}
+
+figure {
+  margin: 0px;
+}
+
+/* CSS GENERAL */
+body {
+  font-family: Raleway;
+  text-align: center;
+  margin: 0px;
+  background-color: #F2F2F2;
+}
+
+/* COULEURS */
+.white {
+  color: white;
+}
+
+/* HEADER GENERAL */
+.header_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 220px;
+  background-color: #F2F2F2;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.header_titre div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* LOGO */
+#figure_ohmyfood {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.logo_ohmyfood {
+  width: 20%;
+  min-width: 175px;
+  margin-top: 5%;
+}
+
+/* IMAGE HEADER */
+#header_plat_image {
+  width: 100%;
+}
+
+/* MAIN ENTREES PLATS DESSERTS */
+main {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+main h2 {
+  text-align: left;
+  font-size: 1.1em;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+main h3 {
+  font-size: 1em;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+
+/* ENTREES */
+.entrees_cartouche, .plats_cartouche, .desserts_cartouche {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3%;
+  border: 10px solid white;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px #bbbbbb;
+}
+
+.cartouche_texte {
+  text-align: left;
+}
+
+.cartouche_prix {
+  font-weight: bolder;
+}
+
+/* FOOTER */
+/* LOGO */
+.logo_ohmyfood_footer {
+  width: 30%;
+}
+
+footer {
+  border: 1px solid #3d3d3d;
+  background-color: #3d3d3d;
+  padding-top: 2%;
+  padding-left: 2%;
+  text-align: left;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=alafrancaise_style.css.map */
