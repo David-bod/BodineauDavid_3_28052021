@@ -82,7 +82,6 @@ h3 {
 .rond_choix p {
   color: white;
   padding-left: 6px;
-  padding-top: 1px;
 }
 
 .fonctionnement_boutons {
@@ -94,17 +93,19 @@ h3 {
 #choix_1, #choix_2, #choix_3 {
   display: flex;
   align-items: center;
-}
-#choix_1 .btn_choix, #choix_2 .btn_choix, #choix_3 .btn_choix {
+  width: 340px;
+  height: 65px;
+  max-width: 350px;
   border-radius: 20px;
-  min-width: 250px;
-  min-height: 60px;
-  background-color: white;
-  border-color: white;
-  box-shadow: 0px 0px 2px #F2F2F2;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  background-color: #F2F2F2;
 }
-#choix_1 :focus, #choix_2 :focus, #choix_3 :focus {
-  background-color: #9256dc25;
+#choix_1 a, #choix_2 a, #choix_3 a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }
 
 /* Section restaurants */

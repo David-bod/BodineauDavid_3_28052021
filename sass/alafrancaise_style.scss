@@ -29,21 +29,14 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-
-.header_titre{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+/* ICON BACK */
+.back_arrow_icon{
 	position: absolute;
-	width: 100%;
-	top: 220px;
-	background-color: #F2F2F2;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
+	top: 25px;
+	margin-left: 30px;
 
-	div{
-		margin-left: 10px;
-		margin-right: 10px;
+	&:hover{
+		color: #9356DC;
 	}
 }
 /* LOGO */
@@ -57,20 +50,38 @@ body{
     width: 20%;
     min-width: 175px;
 	margin-top: 5%;
+	margin-bottom: 3%;
   }
 /* IMAGE HEADER */
 #header_plat_image{
 	width: 100%;
+	object-fit: cover;
 }
-/* MAIN ENTREES PLATS DESSERTS */
+/* TITRE A LA FRANCAISE */
+.figcaption_titre{
+	position: absolute;
+	top: 230px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	border-radius: 30px 30px 0px 0px;
+	background-color: #F2F2F2;
+}
+/* MAIN -> ENTREES PLATS DESSERTS */
 main{
 	margin-left: 3%;
 	margin-right: 3%;
+
 	h2{
 		text-align: left;
 		font-size: 1.1em;
 		margin-bottom: 5%;
 		margin-top: 5%;
+		color: #616060;
+		border-bottom: 3px solid #99E2D0;
+		width: 45px;
+		padding-bottom: 5px;
 	}
 	h3{
 		font-size: 1em;
@@ -83,7 +94,7 @@ main{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	margin-bottom: 3%;
+	margin-bottom: 2%;
 	border: 10px solid white;
 	background-color: white;
 	border-radius: 15px;
@@ -97,22 +108,56 @@ main{
 .cartouche_prix{
 	font-weight: bolder;
 }
+/* BOUTON COMMANDER */
+.commander{
+	
+	padding: 15px 0px 15px 0px;
+	border-radius: 30px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 5%;
+	background: linear-gradient(160deg, #FF79DA, #9356DC );
 
+	a{
+		text-decoration: none;
+		color: white;
+		font-size: 1.2em;
+	}
+}
 /* FOOTER */
 /* LOGO */
 .logo_ohmyfood_footer
 {
 	width: 30%;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 footer{
     border: 1px solid #3d3d3d;
     background-color: #3d3d3d;
+	margin-top: 80px;
     padding-top: 2%;
-    padding-left: 2%;
+    padding-left: 25px;
 	text-align: left;
 
     a{
         text-decoration: none;
         color: white;
     }
+}
+
+.footer_texte{
+	margin-bottom: 10px;
+}
+
+.footer_texte_a{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	
+	a{
+		margin-bottom: 10px;
+	}
 }
