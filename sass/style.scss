@@ -18,13 +18,12 @@ figure{
 }
 
 /* couleurs */
-/*
-.violet{
-    color: #9356DC;
-}
-*/
 .white{
     color: white;
+}
+
+.gris{
+    color: #646464;
 }
 /* CSS GENERAL */
 
@@ -79,11 +78,16 @@ header{
     background-color: #F2F2F2;
     padding-bottom: 50px;
 }
+
+.header_presentation{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 /* main */
 main{
 
     h2{
-        margin-left: 50px;
+        
     }
 }
 /* Bouton restaurants */
@@ -92,11 +96,12 @@ main{
 }
 .btn_restaurant{
     text-decoration: none;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 25px 15px 25px;
     border-radius: 30px;
     font-weight: bolder;
     color: white;
     background: linear-gradient(170deg, #FF79DA, #9356DC );
+    font-size: 0.8em;
 }
 /* fonctionnement > 3 boutons */
 .rond_choix{
@@ -144,7 +149,7 @@ main{
     &:hover{
         background-color: #dbbeff86;
         transition: 0.5s;
-        font-size: 1.1em;
+        font-size: 1.05em;
 
         i{
             color: #9356DC;
@@ -152,38 +157,44 @@ main{
         }
     }
 }
+/* titre restaurants */
+.titre_article_restaurants{
+     width: 100%;
+    text-align: left;
+}
 /* Section restaurants */
 #section_restaurants{
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 5%;
-
-    article{
-
-    }
+    padding-top: 5%;
 }
 /* figure dans > Section restaurants */
 .restaurants_photo{
     box-shadow: 0px 0px 4px #C2C2C2;
     border-radius: 20px;
     width: 90%;
-    min-width: 150px;
-    min-height: 200px;
-    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
 
     img{
         width: 100%;
-        max-width: 850px;
-        max-height: 600px;
-        min-width: 150px;
-        min-height: 100px;
         border-radius: 20px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         object-fit: cover;
+        max-height: 200px;
     }
+}
+/* Figcaption */
+.figcaption_restaurants{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 15px 20px;
 }
 
 /* FOOTER */
@@ -219,4 +230,8 @@ footer{
 	a{
 		margin-bottom: 10px;
 	}
+}
+
+@media screen {
+    
 }
