@@ -58,15 +58,27 @@ body{
 	object-fit: cover;
 }
 /* TITRE A LA FRANCAISE */
-.figcaption_titre{
-	position: absolute;
-	top: 230px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	width: 100%;
-	border-radius: 30px 30px 0px 0px;
-	background-color: #F2F2F2;
+#figure_relative{
+	position: relative;
+
+	.figcaption_titre{
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		border-radius: 30px 30px 0px 0px;
+		background-color: #F2F2F2;
+		bottom: 0px;
+
+		h1{
+			margin-left: 3%;
+		}
+
+		div{
+			margin-right: 3%;
+		}
+	}
 }
 /* MAIN -> ENTREES PLATS DESSERTS */
 main{
@@ -130,7 +142,7 @@ main{
 /* LOGO */
 .logo_ohmyfood_footer
 {
-	width: 30%;
+	width: 15%;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }

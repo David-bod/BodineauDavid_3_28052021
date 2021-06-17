@@ -46,12 +46,12 @@ h3{
 #figure_ohmyfood{
     display: flex;
     justify-content: center;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     margin-top: 20px;
     
   }
   .logo_ohmyfood{
-    width: 20%;
+    width: 22%;
     min-width: 150px;
   }
 /* Header ville */
@@ -87,7 +87,7 @@ header{
 main{
 
     h2{
-        
+        margin-left: 20px;
     }
 }
 /* Bouton restaurants */
@@ -119,8 +119,9 @@ main{
 
 .fonctionnement_boutons{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
 #choix_1, #choix_2, #choix_3{
@@ -158,9 +159,8 @@ main{
     }
 }
 /* titre restaurants */
-.titre_article_restaurants{
-     width: 100%;
-    text-align: left;
+#titre_article_restaurants{
+    width: 100%;
 }
 /* Section restaurants */
 #section_restaurants{
@@ -171,23 +171,30 @@ main{
     justify-content: center;
     padding-bottom: 5%;
     padding-top: 5%;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 /* figure dans > Section restaurants */
 .restaurants_photo{
     box-shadow: 0px 0px 4px #C2C2C2;
+    position: relative;
     border-radius: 20px;
-    width: 90%;
+    width: 310px;
+    height: 270px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 7%;
 
     img{
-        width: 100%;
+        width: 310px;
+        height: 191px;
         border-radius: 20px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         object-fit: cover;
-        max-height: 200px;
     }
 }
 /* Figcaption */
@@ -196,12 +203,32 @@ main{
     justify-content: space-between;
     padding: 20px 20px 15px 20px;
 }
+/* Nouveau produit */
+.new_product{
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    font-weight: bolder;
+    background-color: #99E2D0;
+    color: #006b50;
+    right: 10px;
+    top: 15px;
+}
 
+.new_product_2{
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    font-weight: bolder;
+    background-color: #99E2D0;
+    color: #006b50;
+    right: 10px;
+    top: 15px;
+}
 /* FOOTER */
 /* LOGO */
 .logo_ohmyfood_footer
 {
 	width: 30%;
+    max-width: 150px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
@@ -232,6 +259,9 @@ footer{
 	}
 }
 
-@media screen {
-    
+@media screen and (min-width: 768px) { /* pour format 768px et + */
+    .restaurants_photo{
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
 }
