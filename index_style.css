@@ -17,6 +17,15 @@ figure {
 }
 
 /* LOADER */
+/*
+#loader_background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: linear-gradient(40deg, #44213a, #331e4d);
+}
+*/
 #loader {
   border: 10px solid #FF79DA;
   border-top: 10px solid #9356DC;
@@ -125,6 +134,7 @@ h3 {
 .logo_ohmyfood {
   width: 22%;
   min-width: 150px;
+  max-width: 250px;
 }
 
 /* Header ville */
@@ -300,6 +310,10 @@ main h2 {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   object-fit: cover;
+}
+.restaurants_photo:hover {
+  transform: scale(1.025);
+  transition-duration: 0.2s;
 }
 
 /* Figcaption */

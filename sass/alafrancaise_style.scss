@@ -134,9 +134,19 @@ main{
 }
 
 .animation_hover{
+	display: flex;
 	background-color: #99E2D0;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
+	height: 65px;
+	width: 70px;
+	align-items: center;
+	justify-content: center;
+	margin-right: -75px;
+}
+
+.check{
+	font-size: 1.3em;
 }
 /* ENTREES */
 .entrees_cartouche, .plats_cartouche, .desserts_cartouche{
@@ -147,12 +157,25 @@ main{
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0px 0px 5px #bbbbbb;
-	padding: 10px 10px 10px 10px;
+	overflow: hidden;
+
+	&:hover{
+		.animation_hover{
+			margin-right: 0px;
+			transition: 0.3s;
+		}
+
+		.check{
+			transform: rotate(360deg);
+			transition: 600ms 50ms ease-in-out;
+		}
+	}
 }
 
 .cartouche_texte{
 	text-align: left;
 	max-width: 80%;
+	padding: 10px 10px 10px 10px;
 
 	h3{
 		white-space: nowrap;
@@ -169,6 +192,7 @@ main{
 
 .cartouche_prix{
 	font-weight: bold;
+	padding: 10px 10px 10px 10px;
 }
 /* BOUTON COMMANDER */
 .commander{
