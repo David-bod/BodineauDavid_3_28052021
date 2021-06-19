@@ -37,10 +37,12 @@ h1{
 
 h1, h2{
     font-weight: bolder;
+    font-size: 1.7em;
 }
 
 h3{
     margin: 0px;
+    margin-bottom: 5px;
 }
 /* Logo */
 #figure_ohmyfood{
@@ -107,14 +109,12 @@ main{
 .rond_choix{
     border: 1px solid #9356DC;
     background-color: #9356DC;
-    border-radius: 100px;
+    border-radius: 50%;
     width: 20px;
     height: 20px;
-
-    p{
-        color: white;
-        padding-left: 6px;
-    }
+    color: white;
+    text-align: center;
+    margin-left: -10px;
 }
 
 .fonctionnement_boutons{
@@ -135,6 +135,7 @@ main{
     margin-right: 5%;
     margin-bottom: 20px;
     background-color: #F2F2F2;
+    box-shadow: 0px 0px 10px #C2C2C2;
 
     a{
         text-decoration: none;
@@ -179,7 +180,7 @@ main{
 }
 /* figure dans > Section restaurants */
 .restaurants_photo{
-    box-shadow: 0px 0px 4px #C2C2C2;
+    box-shadow: 0px 0px 10px #C2C2C2;
     position: relative;
     border-radius: 20px;
     width: 310px;
@@ -212,6 +213,7 @@ main{
     color: #006b50;
     right: 10px;
     top: 15px;
+    border-radius: 5px;
 }
 
 .new_product_2{
@@ -222,6 +224,7 @@ main{
     color: #006b50;
     right: 10px;
     top: 15px;
+    border-radius: 5px;
 }
 /* FOOTER */
 /* LOGO */

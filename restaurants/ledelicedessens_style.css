@@ -115,7 +115,7 @@ main h2 {
 }
 main h3 {
   font-size: 1em;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 3%;
 }
 
@@ -142,7 +142,7 @@ main h3 {
 }
 
 .cartouche_prix {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 /* BOUTON COMMANDER */
@@ -206,4 +206,4 @@ footer a {
   }
 }
 
-/*# sourceMappingURL=alafrancaise_style.css.map */
+/*# sourceMappingURL=ledelicedessens_style.css.map */

@@ -115,7 +115,7 @@ main h2 {
 }
 main h3 {
   font-size: 1em;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 3%;
 }
 
@@ -124,7 +124,6 @@ main h3 {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-
 /* ENTREES */
 .entrees_cartouche, .plats_cartouche, .desserts_cartouche {
   display: flex;
@@ -142,7 +141,7 @@ main h3 {
 }
 
 .cartouche_prix {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 /* BOUTON COMMANDER */
@@ -206,4 +205,4 @@ footer a {
   }
 }
 
-/*# sourceMappingURL=alafrancaise_style.css.map */
+/*# sourceMappingURL=lanoteenchantee_style.css.map */
