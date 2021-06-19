@@ -31,19 +31,33 @@ body {
   align-items: center;
 }
 
-/* COEURS */
-.coeur_plein {
-  display: none;
-}
-.coeur_plein:hover {
-  opacity: 100%;
-  background-color: linear-gradient(170deg, #FF79DA, #9356DC);
-  transition: 0.2s;
+/* coeurs vide/plein */
+.like {
+  position: relative;
 }
 
+.coeur_vide {
+  font-size: 20px;
+}
 .coeur_vide:hover {
-  display: none;
-  transition: 0.2s;
+  opacity: 0%;
+  transition: 0.1s;
+}
+
+.coeur_plein {
+  position: absolute;
+  opacity: 0%;
+  left: -7px;
+  top: 0px;
+  width: 35px;
+}
+.coeur_plein:hover {
+  background: linear-gradient(40deg, #ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 22px;
+  opacity: 100%;
+  transition: 0.3s;
 }
 
 /* ICON BACK */
@@ -53,7 +67,8 @@ body {
   margin-left: 30px;
 }
 .back_arrow_icon:hover {
-  color: #9356DC;
+  color: #440e85;
+  transition: 0.3s;
 }
 
 /* LOGO */
@@ -115,7 +130,7 @@ main h2 {
 }
 main h3 {
   font-size: 1em;
-  font-weight: bolder;
+  font-weight: bold;
   margin-bottom: 3%;
 }
 
@@ -124,6 +139,7 @@ main h3 {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
 /* ENTREES */
 .entrees_cartouche, .plats_cartouche, .desserts_cartouche {
   display: flex;
@@ -138,10 +154,21 @@ main h3 {
 
 .cartouche_texte {
   text-align: left;
+  max-width: 80%;
+}
+.cartouche_texte h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cartouche_texte p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cartouche_prix {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 /* BOUTON COMMANDER */
@@ -154,11 +181,16 @@ main h3 {
   margin-top: 50px;
   margin-bottom: 5%;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 0px 1px 5px #616161;
 }
 .commander a {
   text-decoration: none;
   color: white;
   font-size: 1.2em;
+}
+.commander:hover {
+  background: linear-gradient(170deg, #fa87d9, #9d6fd6);
+  box-shadow: 0px 5px 10px #616161;
 }
 
 /* FOOTER */

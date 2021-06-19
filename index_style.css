@@ -157,6 +157,35 @@ header {
   padding-right: 20px;
 }
 
+/* coeurs vide/plein */
+.like {
+  position: relative;
+}
+
+.coeur_vide {
+  font-size: 20px;
+}
+.coeur_vide:hover {
+  opacity: 0%;
+  transition: 0.1s;
+}
+
+.coeur_plein {
+  position: absolute;
+  bottom: 25px;
+  left: -1px;
+  opacity: 0%;
+  width: 35px;
+}
+.coeur_plein:hover {
+  background: linear-gradient(40deg, #ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 22px;
+  opacity: 100%;
+  transition: 0.3s;
+}
+
 /* main */
 main h2 {
   margin-left: 20px;
@@ -176,6 +205,10 @@ main h2 {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   box-shadow: 0px 1px 5px #616161;
   font-size: 0.8em;
+}
+.btn_restaurant:hover {
+  background: linear-gradient(170deg, #fa87d9, #9d6fd6);
+  box-shadow: 0px 5px 10px #616161;
 }
 
 /* fonctionnement > 3 boutons */
