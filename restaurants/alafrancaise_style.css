@@ -131,7 +131,7 @@ main h2 {
 main h3 {
   font-size: 1em;
   font-weight: bold;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 
 .animation_hover {
@@ -139,7 +139,7 @@ main h3 {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  height: 65px;
+  height: 66px;
   width: 70px;
   align-items: center;
   justify-content: center;
@@ -147,7 +147,7 @@ main h3 {
 }
 
 .check {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 /* ENTREES */
@@ -168,11 +168,15 @@ main h3 {
 .entrees_cartouche:hover .check, .plats_cartouche:hover .check, .desserts_cartouche:hover .check {
   transform: rotate(360deg);
   transition: 600ms 50ms ease-in-out;
+  font-size: 1.5em;
+}
+.entrees_cartouche a, .plats_cartouche a, .desserts_cartouche a {
+  text-decoration: none;
 }
 
 .cartouche_texte {
   text-align: left;
-  max-width: 80%;
+  width: 90%;
   padding: 10px 10px 10px 10px;
 }
 .cartouche_texte h3 {
@@ -254,6 +258,16 @@ footer a {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 415px) {
+  /* pour format 415px et - */
+  .entrees_cartouche .cartouche_texte, .plats_cartouche .cartouche_texte, .desserts_cartouche .cartouche_texte {
+    width: 75%;
+  }
+  .entrees_cartouche:hover .cartouche_texte, .plats_cartouche:hover .cartouche_texte, .desserts_cartouche:hover .cartouche_texte {
+    width: 50%;
+    transition: 0.3s;
   }
 }
 
