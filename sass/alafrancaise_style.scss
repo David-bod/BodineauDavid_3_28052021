@@ -24,6 +24,10 @@ body{
 	margin: 0px;
 	background-color: #F2F2F2;
 }
+
+h1{
+	font-family: Shrikhand;
+}
 /* COULEURS */
 .white{
 	color: white;
@@ -42,14 +46,14 @@ body{
 
     font-size: 20px;
     &:hover{
-        opacity: 0%;
+        opacity: 0;
         transition: 0.1s;
     }
 }
 
 .coeur_plein{
     position: absolute;
-    opacity: 0%;
+    opacity: 0;
 	left: -7px;
 	top: 0px;
     width: 35px;
@@ -59,7 +63,7 @@ body{
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         font-size: 23px;
-        opacity: 100%;
+        opacity: 1;
         transition: 0.3s;
     }
 }
@@ -141,11 +145,11 @@ main{
 	background-color: #99E2D0;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
-	height: 70px;
+	height: 72px;
 	width: 70px;
 	align-items: center;
 	justify-content: center;
-	margin-right: -75px;
+	margin-right: -80px;
 }
 
 .check{
