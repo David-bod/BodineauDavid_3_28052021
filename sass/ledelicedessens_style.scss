@@ -3,6 +3,11 @@
 	src: url("../Raleway/Raleway-VariableFont_wght.ttf"),
 		 url("../Raleway-Italic-VariableFont_wght.ttf");
 }
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../Shrikhand/Shrikhand-Regular.otf");
+}
 /* RESET GENERAL PAGES RESTAURANTS */
 h2, h3, p
 {
@@ -53,20 +58,18 @@ body{
         background: linear-gradient(40deg, #ff79da, #9356dc);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        font-size: 22px;
+        font-size: 23px;
         opacity: 100%;
         transition: 0.3s;
     }
 }
 /* ICON BACK */
 .back_arrow_icon{
-	position: absolute;
-	top: 25px;
-	margin-left: 30px;
+	color: #9356dc;
 
 	&:hover{
-		color: #440e85;
-		transition: 0.3s;
+		color: #ff79da;
+		transition: 0.5s;
 	}
 }
 /* LOGO */
@@ -138,7 +141,7 @@ main{
 	background-color: #99E2D0;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
-	height: 66px;
+	height: 70px;
 	width: 70px;
 	align-items: center;
 	justify-content: center;
@@ -152,12 +155,15 @@ main{
 .entrees_cartouche, .plats_cartouche, .desserts_cartouche{ 
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 	margin-bottom: 2%;
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0px 0px 5px #bbbbbb;
 	overflow: hidden;
+	animation: fondu 3s;
+    -moz-animation: fondu 3s;
+    -webkit-animation: fondu 3s;
 
 	&:hover{
 		.animation_hover{
@@ -175,6 +181,37 @@ main{
 	a{
 		text-decoration: none;
 	}
+}
+/* animation fondu entrees, plats et desserts */
+@keyframes fondu {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@-moz-keyframes fondu {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@-webkit-keyframes fondu {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .cartouche_texte{
@@ -225,12 +262,14 @@ main{
 }
 /* FOOTER */
 /* LOGO */
-.logo_ohmyfood_footer
+#footer_logo
 {
 	width: 15%;
 	min-width: 120px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	font-family: Shrikhand;
+	color: white;
 }
 footer{
     border: 1px solid #3d3d3d;

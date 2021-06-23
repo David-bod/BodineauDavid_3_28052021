@@ -4,6 +4,11 @@
 	src: url("Raleway/Raleway-VariableFont_wght.ttf"),
 		 url("Raleway-Italic-VariableFont_wght.ttf");
 }
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("Shrikhand/Shrikhand-Regular.otf");
+}
 /* RESET GENERAL */
 body{
     margin: 0px;
@@ -90,7 +95,6 @@ figure{
     100%{
         transform: rotate(360deg);
         opacity: 0;
-        z-index: -10;
     }
 }
 /* couleurs */
@@ -177,18 +181,21 @@ header{
 
 .coeur_plein{
     position: absolute;
-    bottom: 25px;
-    left: -1px;
-    opacity: 0%;
+    bottom: 27px;
+    left: 2px;
+    opacity: 0;
     width: 35px;
 
     &:hover{
+        position: absolute;
         background: linear-gradient(40deg, #ff79da, #9356dc);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        font-size: 22px;
-        opacity: 100%;
+        font-size: 23px;
+        opacity: 1;
         transition: 0.3s;
+        bottom: 24px;
+        left: -1px;
     }
 }
 /* main */
@@ -346,12 +353,14 @@ main{
 }
 /* FOOTER */
 /* LOGO */
-.logo_ohmyfood_footer
+#footer_logo
 {
 	width: 30%;
     max-width: 150px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+    font-family: Shrikhand;
+    color: white;
 }
 footer{
     border: 1px solid #3d3d3d;
@@ -364,6 +373,7 @@ footer{
         text-decoration: none;
         color: white;
     }
+
 }
 
 .footer_texte{
