@@ -6,6 +6,7 @@
   font-family: "Shrikhand";
   src: url("../Shrikhand/Shrikhand-Regular.otf");
 }
+/* mixin */
 /* RESET GENERAL PAGES RESTAURANTS */
 h2, h3, p {
   margin: 0px;
@@ -296,10 +297,19 @@ footer a {
 
 @media screen and (min-width: 768px) {
   /* pour format 768px et + */
-  body {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+  .entrees_bloc, .plats_bloc, .desserts_bloc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .entrees_bloc .entrees_cartouche, .entrees_bloc .plats_cartouche, .entrees_bloc .desserts_cartouche, .plats_bloc .entrees_cartouche, .plats_bloc .plats_cartouche, .plats_bloc .desserts_cartouche, .desserts_bloc .entrees_cartouche, .desserts_bloc .plats_cartouche, .desserts_bloc .desserts_cartouche {
+    min-width: 400px;
+    max-width: 600px;
+    margin: 10px;
+  }
+  .entrees_bloc .entrees_cartouche:hover .cartouche_texte, .entrees_bloc .plats_cartouche:hover .cartouche_texte, .entrees_bloc .desserts_cartouche:hover .cartouche_texte, .plats_bloc .entrees_cartouche:hover .cartouche_texte, .plats_bloc .plats_cartouche:hover .cartouche_texte, .plats_bloc .desserts_cartouche:hover .cartouche_texte, .desserts_bloc .entrees_cartouche:hover .cartouche_texte, .desserts_bloc .plats_cartouche:hover .cartouche_texte, .desserts_bloc .desserts_cartouche:hover .cartouche_texte {
+    width: 200px;
+    transition: 0.1s;
   }
 }
 @media screen and (max-width: 415px) {

@@ -8,6 +8,7 @@
     font-family: "Shrikhand";
     src: url("../Shrikhand/Shrikhand-Regular.otf");
 }
+/* mixin */ 
 /* RESET GENERAL PAGES RESTAURANTS */
 h2, h3, p
 {
@@ -304,14 +305,24 @@ footer{
 }
 
 @media screen and (min-width: 768px) { /* pour format 768px et + */
-	body{
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
+	.entrees_bloc, .plats_bloc, .desserts_bloc{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.entrees_cartouche, .plats_cartouche, .desserts_cartouche{
+			min-width: 400px;
+			max-width: 600px;
+			margin: 10px;
+
+			&:hover{
+				.cartouche_texte{
+					width: 200px;
+					transition: 0.1s;
+				}
+			}
+		}
 	}
-
 }
-
 @media screen and (max-width: 415px){ /* pour format 415px et - */
 	.entrees_cartouche, .plats_cartouche, .desserts_cartouche{ 
 		.cartouche_texte{

@@ -13,7 +13,21 @@
 body{
     margin: 0px;
 }
-
+/* animation background loader */
+header, main, footer{
+    animation: back 4s linear both;
+}
+@keyframes back {
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 p {
   margin: 0px;
 }
